@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import com.example.newsapp.presentation.Dimens.IndicatorSize
+import com.example.newsapp.ui.theme.BlueGray
 
 @Composable
 fun PageIndicator(
@@ -19,7 +20,7 @@ fun PageIndicator(
     pageSize: Int,
     selectedPage: Int,
     selectedColor: Color = MaterialTheme.colorScheme.primary,
-    unselectedColor: Color = Color.Gray
+    unselectedColor: Color = BlueGray
 ) {
 
     Row(modifier = modifier, horizontalArrangement = Arrangement.SpaceBetween) {
