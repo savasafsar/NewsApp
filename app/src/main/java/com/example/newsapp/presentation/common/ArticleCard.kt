@@ -35,6 +35,7 @@ import com.example.newsapp.presentation.Dimens.ExtraSmallPadding
 import com.example.newsapp.presentation.Dimens.ExtraSmallPadding2
 import com.example.newsapp.presentation.Dimens.SmallIconSize
 import com.example.newsapp.ui.theme.NewsAppTheme
+import java.nio.file.WatchEvent
 
 @Composable
 fun ArticleCard(
@@ -43,13 +44,13 @@ fun ArticleCard(
     onClick: () -> Unit
 ) {
     val context = LocalContext.current
-    Row(modifier = modifier.clickable { onClick }) {
+    Row(modifier = Modifier.clickable { onClick() }) {
         AsyncImage(
             modifier = Modifier
                 .size(ArticleCardSize)
                 .clip(MaterialTheme.shapes.medium),
             model = ImageRequest.Builder(context).data(article.urlToImage).build(),
-            contentDescription = null
+            contentDescription = null,
         )
         Column(
             verticalArrangement = Arrangement.SpaceAround,
@@ -73,10 +74,10 @@ fun ArticleCard(
                     color = colorResource(id = R.color.body)
                 )
                 Spacer(modifier = Modifier.width(ExtraSmallPadding2))
-                Icon(painter = painterResource(id = R.drawable.ic_time), contentDescription = null,
+                Icon(
+                    painter = painterResource(id = R.drawable.ic_time), contentDescription = "",
                     modifier = Modifier.size(SmallIconSize),
                     tint = colorResource(id = R.color.body)
-
                 )
                 Spacer(modifier = Modifier.width(ExtraSmallPadding2))
                 Text(
@@ -97,13 +98,13 @@ fun ArticleCardPreview() {
         ArticleCard(
             article = Article(
                 author = "",
-                "gregregergergre",
-                "gergergregerre",
-                "2 hours",
-                source = Source(id = "", "BBC"),
-                title = "gregregregregre",
-                "",
-                ""
+                content = "",
+                description = "",
+                publishedAt = "2 hours",
+                source = Source(id = "", name = "BBC"),
+                title = "Her traint broke down.Her phone died.And then she met her saver in a",
+                url = "",
+                urlToImage = ""
             )
         ) {
 
