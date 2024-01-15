@@ -1,0 +1,7 @@
+![SearchScreen](https://github.com/savasafsar/NewsApp/assets/130254267/c685cde8-8d30-4da4-a2c4-327274649274)
+![Overview3](https://github.com/savasafsar/NewsApp/assets/130254267/d1617885-b58c-4859-8467-16810f2dad87)
+![Overview2](https://github.com/savasafsar/NewsApp/assets/130254267/ca8f05a5-1d63-4aee-a98a-eb9436bfac38)
+![Overview1](https://github.com/savasafsar/NewsApp/assets/130254267/32b8ac63-e015-4e19-b332-7ea91bd4ef11)
+![HomeScreen](https://github.com/savasafsar/NewsApp/assets/130254267/bb26d2c6-3c61-4d00-9c06-678b98f3a898)
+![DetailScreen](https://github.com/savasafsar/NewsApp/assets/130254267/9aa6dcad-11fa-4f2b-9eea-9c28e863520e)
+![BookMarkScreen](https://github.com/savasafsar/NewsApp/assets/130254267/6505274c-d8ea-4309-bf7c-bb70414d66cc)
